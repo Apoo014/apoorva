@@ -1,3 +1,5 @@
+name: ML Pipeline
+
 on: [push]
 
 jobs:
@@ -5,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -12,6 +15,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-	
+
       - name: Run training script
-        run: python train.py   
+        run: python train.py
