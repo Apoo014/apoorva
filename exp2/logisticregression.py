@@ -6,7 +6,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-import matplotlib.pyplot as plt
 
 data= pd.read_csv("HeartDis.csv")
 
