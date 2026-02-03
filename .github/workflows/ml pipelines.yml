@@ -18,3 +18,5 @@ jobs:
 
       - name: Run training script
         run: python train.py
+
+      - run: ls -la
